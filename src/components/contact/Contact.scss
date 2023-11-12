@@ -1,0 +1,145 @@
+.contact {
+  padding-bottom: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  &.light {
+    .contact_container {
+      form {
+        input,
+        textarea {
+          background-color: var(--secondary-bg-color);
+          color: var(--light);
+        }
+      }
+      .info {
+        .single-info {
+          p {
+            color: var(--p-light-color);
+          }
+          i {
+            color: var(--secondary-bg-color);
+          }
+        }
+      }
+    }
+  }
+  .contact_container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    form {
+      width: 600px;
+      display: flex;
+      flex-direction: column;
+      .name_mail {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        input {
+          width: calc(100% / 2);
+        }
+      }
+      input {
+        border: none;
+        outline: none;
+        background-color: var(--light);
+        padding: 10px;
+        margin: 8px 0;
+        border-radius: 5px;
+        height: 50px;
+        font-size: 17px;
+      }
+      textarea {
+        border: none;
+        font-size: 17px;
+        outline: none;
+        background-color: var(--light);
+        padding: 10px;
+        margin: 8px 0;
+        border-radius: 5px;
+        resize: none;
+        height: 120px;
+      }
+      input[type="submit"] {
+        background-color: var(--icon-color);
+        color: var(--light);
+        font-size: 20px;
+        cursor: pointer;
+      }
+    }
+    .info {
+      // flex: 1;
+      .single-info {
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        margin-bottom: 20px;
+        p {
+          margin-left: 20px;
+          color: var(--p-color);
+        }
+      }
+    }
+  }
+  h2 {
+    color: var(--icon-color);
+    font-weight: normal;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    .contact_container {
+      flex-direction: column;
+      justify-content: center;
+      form {
+        margin: auto;
+        width: 500px;
+      }
+    }
+  }
+}
+@media (max-width: 560px) {
+  .contact {
+    .contact_container {
+      form {
+        width: 350px;
+        .name_mail{
+          flex-direction: column;
+          input{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 375px) {
+  .contact {
+    .contact_container {
+      form {
+        width: 300px;
+      }
+      .info{
+        .single-info{
+          p{
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .contact {
+    .contact_container {
+      form {
+        width: 270px;
+      }
+    }
+  }
+}

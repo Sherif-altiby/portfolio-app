@@ -1,0 +1,71 @@
+.testmonials{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  .box{
+    background-color: var(--primary-bg-color);
+    padding: 10px;
+    max-width: 500px;
+    margin: auto;
+    .img-info{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      h2{
+        color: var(--icon-color);
+        font-weight: normal;
+      }
+      p{
+        color: var(--p-color);
+        margin-top: -5px;
+      }
+    }
+    img{
+      width: 80px;
+      height:80px;
+      padding: 5px;
+      border:3px solid var(--icon-color);
+      border-radius: 50%;
+    }
+  
+  }
+  .text{
+    font-size: 15px;
+    letter-spacing: 2px;
+    line-height: 2;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+.swiper-button-next{
+  width: 40% !important;
+  color: var(--icon-color) !important;
+}
+.swiper-button-prev{
+  width: 40% !important;
+  color: var(--icon-color) !important;
+
+}
+
+@media (max-width:1115px) {
+  .swiper-button-next{
+    width: 20% !important;
+    color: var(--icon-color) !important;
+  }
+  .swiper-button-prev{
+    width: 20% !important;
+    color: var(--icon-color) !important;
+  
+  }
+}
+@media (max-width:768px) {
+  .swiper-button-next{
+    width: 0% !important;
+    color: var(--icon-color) !important;
+  }
+  .swiper-button-prev{
+    width: 0% !important;
+    color: var(--icon-color) !important;
+    right: 0 !important;
+  }
+}

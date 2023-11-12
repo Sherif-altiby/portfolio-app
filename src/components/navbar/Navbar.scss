@@ -1,0 +1,236 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  background-color: var(--primary-bg-color);
+  position: sticky;
+  top: 0;
+  z-index: 9999999;
+  &.light {
+    color: var(--dark);
+    background-color: var(--light);
+    box-shadow: 0 0 5px #999;
+    .menu {
+      ul {
+        li {
+          a {
+            color: var(--dark);
+          }
+        }
+      }
+      &.block {
+        background-color: #999;
+        direction: ltr;
+        ul {
+          li {
+            &:hover {
+              background-color: #998;
+            }
+            &::before {
+              background-color: transparent;
+            }
+          }
+        }
+      }
+      ul {
+        li {
+          &::before {
+            background-color: var(--dark);
+          }
+        }
+      }
+    }
+    .mode_translation {
+      .bars {
+        border: 2px solid var(--dark);
+      }
+      .dark_light_mode {
+        border: 1px solid var(--dark);
+      }
+    }
+    .translation {
+      ul {
+        background-color: var(--light);
+        box-shadow: 0 0 5px #999;
+        li {
+          &:last-child {
+            border-top: 1px solid #000;
+          }
+        }
+      }
+    }
+  }
+  .logo {
+    width: 135px;
+    img {
+      width: 100%;
+    }
+  }
+  .menu {
+    &.block {
+      left: 0px;
+      transition: var(--transition);
+      ul {
+        li {
+          transition: var(--transition);
+
+          &:hover {
+            background-color: #504e4e;
+          }
+          &::before {
+            background-color: transparent;
+          }
+        }
+      }
+    }
+    ul {
+      display: flex;
+      align-items: center;
+
+      li {
+        padding: 10px;
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 0;
+          transition: var(--transition);
+          height: 2px;
+          background-color: var(--light);
+        }
+        &:hover {
+          height: 100%;
+          &::before {
+            width: 100%;
+          }
+        }
+        a {
+          font-size: 18x;
+          cursor: pointer;
+          color: var(--light);
+          width: 100%;
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+  .mode_translation {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    cursor: pointer;
+    .bars {
+      border: 2px solid var(--light);
+      border-radius: 5px;
+      padding: 2px 6px;
+      display: flex;
+      opacity: 0;
+
+      &.block {
+        display: block;
+        top: 80px;
+      }
+      i {
+        font-size: 25px;
+      }
+    }
+    .dark_light_mode {
+      border: 1px solid #fff;
+      width: 60px;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 4px 0;
+      cursor: pointer;
+    }
+  }
+  .translation {
+    position: relative;
+    i {
+      cursor: pointer;
+      font-size: 23px;
+    }
+    ul {
+      position: absolute;
+      flex-direction: column;
+      background-color: var(--primary-bg-color);
+      border-radius: 5px;
+      top: 30px;
+      padding: 10px;
+      width: 100px;
+      opacity: 0;
+      transition: var(--transition);
+      &.opacity_1 {
+        opacity: 1;
+      }
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        &:last-child {
+          margin-top: 10px;
+          padding-top: 10px;
+          border-top: 1px solid #fff;
+        }
+        img {
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    .translation {
+      ul {
+        left: -80px;
+      }
+    }
+    .menu {
+      top: 80px;
+      display: block;
+      position: absolute;
+      background: var(--primary-bg-color);
+      width: 100%;
+      left: -100%;
+      ul {
+        flex-direction: column;
+        li {
+          width: 100%;
+          border-top: 1px solid #fff;
+        }
+      }
+    }
+    .mode_translation {
+      .bars {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .navbar {
+    .mode_translation {
+      gap: 10px;
+      .bars {
+        i {
+          font-size: 18px;
+        }
+      }
+    }
+    .logo {
+      width: 110px;
+      display: flex;
+    }
+  }
+}

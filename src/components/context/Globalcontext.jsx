@@ -3,7 +3,6 @@ import { useState, useContext, createContext, useEffect } from "react";
 export const Context = createContext();
 
 
-// eslint-disable-next-line react/prop-types
 const Globalcontext = ({ children }) => {
  
   const [theme, setTheme] = useState(localStorage.getItem("theme") ? JSON.parse(localStorage.getItem("theme")) : true);

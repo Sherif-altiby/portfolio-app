@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/portfolio-app/static/css/main.9a4a5576.css",
+    "main.js": "/portfolio-app/static/js/main.af47b8e8.js",
+    "static/media/food-full (2).jpg": "/portfolio-app/static/media/food-full (2).e7cba70100aaa0b200a6.jpg",
+    "static/media/bookstore-mini.jpg": "/portfolio-app/static/media/bookstore-mini.a99900b2b4df40409ab7.jpg",
+    "static/media/devices.jpg": "/portfolio-app/static/media/devices.77417f8f67b90ddd31d1.jpg",
+    "static/media/chrip.jpg": "/portfolio-app/static/media/chrip.d20214e4906da8b6f27e.jpg",
+    "static/media/bb.jpg": "/portfolio-app/static/media/bb.e70fd17c7b5eac107129.jpg",
+    "static/media/about.avif": "/portfolio-app/static/media/about.161cb2e196da2f9e4bca.avif",
+    "static/media/sherif-altiby-low-resolution-logo-black-on-transparent-background.png": "/portfolio-app/static/media/sherif-altiby-low-resolution-logo-black-on-transparent-background.0695000bdecba2cd7b03.png",
+    "static/media/sherif-altiby-low-resolution-logo-white-on-transparent-background.png": "/portfolio-app/static/media/sherif-altiby-low-resolution-logo-white-on-transparent-background.e0a04b6640e7f053f535.png",
+    "static/media/us.webp": "/portfolio-app/static/media/us.f8c8b8ae3ac41e95b7d9.webp",
+    "static/media/eg.webp": "/portfolio-app/static/media/eg.76f3cd66aaa11a9a9570.webp",
+    "index.html": "/portfolio-app/index.html",
+    "main.9a4a5576.css.map": "/portfolio-app/static/css/main.9a4a5576.css.map",
+    "main.af47b8e8.js.map": "/portfolio-app/static/js/main.af47b8e8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9a4a5576.css",
+    "static/js/main.af47b8e8.js"
+  ]
+}
